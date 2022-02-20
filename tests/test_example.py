@@ -18,3 +18,8 @@ class ExampleTestCase(unittest.TestCase):
 	def test_something(self):
 		apostadores = self.logica.dar_apostadores()
 		self.assertEquals(apostadores[1]['Nombre'], "Ana Andrade")
+		
+    #Prueba para verificar que Jenkins toma el caso
+	def test_something(self):
+		apostadores = self.logica.dar_apostadores()
+		self.assertEquals(apostadores[0]['Nombre'], "Pepe Bedoya")		
