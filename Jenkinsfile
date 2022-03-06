@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') { 
             steps {
                 scmSkip(deleteBuild: true, skipPattern:'.*\\[ci-skip\\].*')
-                git branch: 'main',  
+                git branch: 'develop',  
                 credentialsId: env.GITHUB_TOKEN_ID,
                 url: 'https://github.com/MISW-4101-Practicas/' + env.GIT_REPO
             }
