@@ -15,11 +15,11 @@ class ExampleTestCase(unittest.TestCase):
 		self.logica = Logica_mock()
 
     #Prueba para verificar que el caso funciona. El nombre del método usa el prefijo test_
-	def test_something(self):
+	def test_apostadores(self):
 		apostadores = self.logica.dar_apostadores()
-		self.assertEquals(apostadores[1]['Nombre'], "Ana Andrade")
+		self.assertEqual(apostadores[1]['Nombre'], "Ana Andrade")
 		
     #Prueba para verificar que Jenkins toma el caso
-	def test_something2(self):
-		apostadores = self.logica.dar_apostadores()
-		self.assertEquals(apostadores[0]['Nombre'], "Pepe Pérez")		
+	def test_carreras(self):
+		carreras = self.logica.dar_carreras()
+		self.assertEqual(carreras[0]['Nombre'], "Carrera 1")
