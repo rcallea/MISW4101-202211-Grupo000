@@ -23,3 +23,7 @@ class ExampleTestCase(unittest.TestCase):
 	def test_carreras(self):
 		carreras = self.logica.dar_carreras()
 		self.assertEqual(carreras[0]['Nombre'], "Carrera 1")
+
+	def test_dar_carrera(self):
+		carrera = self.logica.dar_carrera(0)
+		self.assertEqual(carrera['Nombre'], "Carrera 1")
