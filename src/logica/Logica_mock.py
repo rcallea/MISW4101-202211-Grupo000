@@ -115,4 +115,12 @@ class Logica_mock():
             if ganancias['Carrera'] == n_carrera:
                 return ganancias['Ganancias'], ganancias['Ganancias de la casa']
 
+    def dar_reporte_ganancias_1(self, id_carrera, id_competidor):
+        self.carreras[id_carrera]['Abierta']=False
+        n_carrera = self.carreras[id_carrera]['Nombre']
+        
+        for ganancias in self.ganancias:
+            if ganancias['Carrera'] == n_carrera:
+                return ganancias['Ganancias'], ganancias['Ganancias de la casa']
+
     
